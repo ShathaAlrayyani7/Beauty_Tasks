@@ -1,0 +1,12 @@
+{
+  "name": "beauty_task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ShathaAlrayyani7/Beauty_Tasks.git",
+  "author": "ShathaAlrayyani7 <shatha.alrayyani@optimumpartners.co>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}

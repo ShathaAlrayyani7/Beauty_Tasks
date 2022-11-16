@@ -1,0 +1,68 @@
+:root{
+    --sideBar :lightblue;
+    --background : rgb(0, 0, 1);
+    --sideBar-z-index: 10;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* display: flex; */
+    height: 100vh;
+    max-width: 100%;
+
+}
+
+.sideBar{
+    padding-left: 1rem;
+    justify-content: space-around;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    width: 0px;
+    z-index: var(--sideBar-z-index);
+    transition: 0.5s;
+}
+
+.show{
+    background-color: var(--sideBar);
+    transition: 0.5s;
+    width: 130px;
+}
+
+.backgroundImg{
+    width: 100%;
+}
+
+.ImgContainer{
+    background-color: var(--background);
+    display: flex;
+    height:100vh;
+    width: 100%;
+}
+
+.icon{
+    height: 75px;
+    width: 75px;
+}
+
+.navItem{
+    display: flex;
+    margin: 1rem;
+    transform: scale(1);
+    transition: 1s;
+    width: 100%;
+}
+
+.navItem:hover{
+    transform: scale(1.33);
+    transition: 1s;
+}
+
