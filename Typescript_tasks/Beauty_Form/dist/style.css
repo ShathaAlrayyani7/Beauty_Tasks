@@ -1,0 +1,56 @@
+@import url('../src/Components/Atoms/Button/button.css');
+@import url('../src/Components/Molecules/FormItem/formItem.css');
+@import url('../src/Components/Templates/FormContainer/formContainer.css');
+@import url('../src/Components/Atoms/Button/button.css');
+@import url('../src/Components/Atoms/Input/input.css');
+@import url('../src/Components/Organisms/Form/form.css');
+@import url('../src/Components/Molecules/Radio/radio.css');
+@import url('../src/Components/Atoms/FormTitle/formTitle.css');
+@import url('../src/Components/Atoms/SwitchLink/switchLink.css');
+@import url('../src/Components/Molecules/BackgroundImg/backgroungImg.css');
+@import url('../src/Components/Atoms/ValidationText/validationText.css');
+@import url('./global.css');
+
+*{
+    box-sizing: border-box;
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.app{
+    align-items: center;
+    background: var(--backgroundColor);
+    background: -webkit-linear-gradient(to bottom, var(--bgColor2), var(--backgroundColor));
+    background: linear-gradient(to bottom, var(--bgColor2), var(--backgroundColor));
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px){
+  
+    .backgroundImg{
+        height: 350px;
+        width: 350px;
+    }
+
+    .formContainer.login{
+        grid-template: [row1-start]'form' 60%[row1-end] [row2-start]'img' 40%[row2-end]  / 350px;
+        height: 600px;
+        width: 350px;
+    }
+
+    /* .formContainer.register{
+        height: 700px;
+        padding: 1rem;
+        width: 350px;
+    } */
+}
