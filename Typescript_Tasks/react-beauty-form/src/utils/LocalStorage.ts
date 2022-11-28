@@ -1,4 +1,4 @@
-import { IStorage } from "../Interfaces/interface"
+import { IStorage } from "../Interface/inteface"
 
 export default class Storage <T extends string>{
     private readonly _storage: IStorage

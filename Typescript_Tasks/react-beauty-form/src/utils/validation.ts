@@ -2,9 +2,8 @@ type  hp = HTMLParagraphElement
 
 export const validEmail = (mail:string) : boolean => {
     const regx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-    const validMsg = document.getElementsByClassName('valid email')[0] as hp
-    let text = ''
-
+    let validMsg = document.getElementsByClassName('valid email')[0] as hp
+    let text = ''    
     if (regx.test(mail)){
         validMsg.innerText = text
         return true
@@ -17,7 +16,7 @@ export const validEmail = (mail:string) : boolean => {
 }
 
 export const validUserName = (psw:string) : boolean => {
-    const regx = /[a-z]/
+    const regx = /^[a-z]+$/
     const validMsg = document.getElementsByClassName('valid userName')[0] as hp
     let text = ''
 
@@ -36,7 +35,7 @@ export const validPsw1 = (psw:string): boolean | undefined =>{
     const numbers = /[0-9]/g
     const uppercase = /[A-Z]/g
     let text = ''
-    const validMsg = document.getElementsByClassName('valid psw1')[0] as hp
+    const validMsg = document.getElementsByClassName('valid psw')[0] as hp
 
     const text1 = ` -Your password must be more than 8 characters and less than 16 \n`
     const text2  =  `-Your password must contain at least one digit \n`
@@ -62,7 +61,7 @@ export const validPsw1 = (psw:string): boolean | undefined =>{
 
 export const validPsw2 = (psw1:string,psw2:string): boolean=>{
 
-    const validMsg = document.getElementsByClassName('valid psw2')[0] as hp
+    const validMsg = document.getElementsByClassName('valid psw')[1] as hp    
     let text = ''
     
     validPsw1(psw1)
@@ -79,15 +78,17 @@ export const validPsw2 = (psw1:string,psw2:string): boolean=>{
 
 export const validSignIn =(email:string,psw:string): boolean =>{
 
-    const validMail = document.getElementsByClassName('valid email')[0] as hp
-    const validPass = document.getElementsByClassName('valid psw')[0] as hp
-    const data :string = JSON.parse(localStorage.getItem(email)||"")
+    let validMail = document.getElementsByClassName('valid email')[0] as hp
+    let validPass = document.getElementsByClassName('valid psw')[0] as hp
+    let data :string = JSON.parse(localStorage.getItem(email)||"[]")
+    const keys = Object.keys(localStorage)
+
     const text = ''
     const text1 = "You Entered Invalid Email Address!"
     const text2 = 'Please make sure to write the password correctly'
    
-    if (data){
-        validMail.innerText = text
+    if(keys.includes(email)){
+        validMail.innerText = text;
         if(`${psw}` !== data[0]) {
             validPass.innerText = text2
             return false
@@ -100,6 +101,24 @@ export const validSignIn =(email:string,psw:string): boolean =>{
         validMail.innerText = text1
         validPass.innerText = text2
         return false
-
     }
+}
+
+export const registerValidation = <html extends HTMLInputElement>() => {
+    const email = document.getElementsByName('email')[0] as html
+    validEmail(email.value)
+    const userName = document.getElementsByName('userName')[0] as html
+    validUserName(userName.value)
+    const psw1 = document.getElementsByName('psw')[0] as html
+    validPsw1(psw1.value)
+    const psw2 = document.getElementsByName('psw')[1] as html
+    validPsw2(psw1.value, psw2.value)
+}
+
+export const loginValidation = <html extends HTMLInputElement>() => {
+    const email = document.getElementsByName('email')[0] as html
+    
+    const psw = document.getElementsByName('psw')[0] as html
+    validSignIn(email.value, psw.value)
+
 }
