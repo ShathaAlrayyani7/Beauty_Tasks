@@ -1,17 +1,14 @@
+import { FormTitles } from "../../../Constants/Enums"
 
 export default class FormTitle{
     private _formTitle : HTMLHeadingElement
-    constructor(type: string){
-
+    
+    constructor(text:FormTitles){
         this._formTitle = document.createElement('h1')
         this._formTitle.setAttribute('class','title')
-
-        if(type == 'login'){
-            this._formTitle.innerText ='Login'
-        }else{
-            this._formTitle.innerText ='Register'
-        }
+        this._formTitle.innerText = text
     }
+
     get formTitle(){
         return this._formTitle
     }

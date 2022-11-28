@@ -1,9 +1,8 @@
 export default class Label{
     private _label : HTMLLabelElement
-    constructor(labelFor:string , labelText:string ,iconSrc :string =''){
+    constructor(labelText:string ,iconSrc :string =''){
 
         this._label = document.createElement('label')
-        this._label.setAttribute('for', labelFor)
         this._label.innerText = labelText
 
         if(iconSrc){

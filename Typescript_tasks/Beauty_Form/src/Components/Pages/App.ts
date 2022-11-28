@@ -1,11 +1,10 @@
-import { login } from '../../Constants/login'
-import FormContainer from '../Templates/FormContainer/FormContainer'
+import LoginFormContainer from '../Templates/LoginFormContainer/LoginFormContainer'
 
 
-const body = document.getElementsByTagName('body')[0]
-const app = document.createElement('div')
+let body : HTMLBodyElement = document.getElementsByTagName('body')[0]
+let app :HTMLDivElement = document.createElement('div')
 app.setAttribute('class','app')
 
-const form = new FormContainer('login',login).formContainer
+let form = new LoginFormContainer().loginFormContainer
 app.appendChild(form)
 body.appendChild(app)

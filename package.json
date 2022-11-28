@@ -2,7 +2,6 @@
   "license": "MIT",
   "name": "beauty_task",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:ShathaAlrayyani7/Beauty_Tasks.git",
   "author": "ShathaAlrayyani7 <shatha.alrayyani@optimumpartners.co>",
   "private": true,
@@ -23,12 +22,12 @@
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "eslint-plugin-sort-export-all": "^1.2.2",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "module-alias": "^2.2.2"
+    "module-alias": "^2.2.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
   },
   "devDependencies": {
     "ts-loader": "^9.4.1",
-    "typescript": "^4.9.3",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.0"
+    "typescript": "^4.9.3"
   }
 }

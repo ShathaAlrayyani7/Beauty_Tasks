@@ -1,14 +1,17 @@
 @import url('../src/Components/Atoms/Button/button.css');
 @import url('../src/Components/Molecules/FormItem/formItem.css');
-@import url('../src/Components/Templates/FormContainer/formContainer.css');
 @import url('../src/Components/Atoms/Button/button.css');
 @import url('../src/Components/Atoms/Input/input.css');
-@import url('../src/Components/Organisms/Form/form.css');
 @import url('../src/Components/Molecules/Radio/radio.css');
 @import url('../src/Components/Atoms/FormTitle/formTitle.css');
 @import url('../src/Components/Atoms/SwitchLink/switchLink.css');
 @import url('../src/Components/Molecules/BackgroundImg/backgroungImg.css');
 @import url('../src/Components/Atoms/ValidationText/validationText.css');
+@import url('../src/Components/Organisms/LoginForm/loginForm.css');
+@import url('../src/Components/Organisms/RegisterForm/registerForm.css');
+@import url('../src/Components/Templates/LoginFormContainer/loginFormContainer.css');
+@import url('../src/Components/Templates/RegisterFormContainer/registerFormContainer.css');
+@import url('../src/Components/Atoms/Label/label.css');
 @import url('./global.css');
 
 *{

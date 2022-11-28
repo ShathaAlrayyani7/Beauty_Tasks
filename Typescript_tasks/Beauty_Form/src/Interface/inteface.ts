@@ -1,16 +1,19 @@
-export interface data{
-    input:{type:string,name:string,value:string}[];
-    label:{for:string,text:string}[];
+export interface genderInput{
+    type:string,
+    name:string,
+    value:string,
+    labelText:string
 }
 
-export interface formData {
-    input: {type:string, name:string, value:string, placeholder:string}[],
-    label: {for:string, text:string, img: string}[],
-    button:{class:string, type:string, text:string,eventName?:string}
-} 
+
+export interface inputs extends genderInput {
+    placeholder:string
+    labelIcon: string
+    event : () => void
+}
 
 export interface IStorage {
     getItem(key: string): string | null;
     setItem(key: string, value: string): void;
     removeItem(key: string): void;
-  }
+}
