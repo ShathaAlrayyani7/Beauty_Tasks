@@ -7,9 +7,8 @@ export interface genderInput{
 
 
 export interface inputs extends genderInput {
-    placeholder:string
-    labelIcon: string
-    event : () => void
+    placeholder?:string
+    labelIcon?: string
 }
 
 export interface IStorage {

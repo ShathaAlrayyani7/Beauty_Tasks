@@ -9,10 +9,9 @@ export default class LoginFormContainer{
 
         const form = new LoginForm().loginForm
         this._formContainer.appendChild(form)
-        const {backgroundImg} = new BackgroundImg('login')
+        const backgroundImg = new BackgroundImg('login').backgroundImg
         this._formContainer.setAttribute('class',`formContainer-login`)
-        this._formContainer.appendChild(backgroundImg)
-        
+        this._formContainer.appendChild(backgroundImg)        
     }
 
     get loginFormContainer(){

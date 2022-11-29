@@ -1,6 +1,9 @@
-export default class Input{
+export default class Input {
+
     private _input : HTMLInputElement
-    constructor(inputType : string, inputName: string, event?:EventListener,inputPlaceholder?: string){
+
+    constructor(inputType : string, inputName: string, event?:EventListener,inputPlaceholder?: string) {
+
         this._input = document.createElement('input')
         this._input.setAttribute('type', inputType)
         this._input.setAttribute('name', inputName);
@@ -9,7 +12,7 @@ export default class Input{
         (event)? this._input.addEventListener('input',event): "";
     }
 
-    get input(){
+    get input() {
         return this._input
     }
 

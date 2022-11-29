@@ -1,9 +1,11 @@
 import { SwitchLinks } from "../../../Constants/Enums"
 
+export default class SwitchLink {
 
-export default class SwitchLink{
     private _text :HTMLDivElement
-    constructor(text:SwitchLinks){
+
+    constructor(text:SwitchLinks) {
+        
         this._text = document.createElement('div')
         const link = document.createElement('a')
         this._text.setAttribute('class','text')
@@ -13,7 +15,7 @@ export default class SwitchLink{
         this._text.appendChild(link)
     }
     
-    get switchLink(){
+    get switchLink() {
         return this._text
     }
 }

@@ -1,5 +1,4 @@
 import { inputs } from "../Interface/inteface"
-import { registerValidation } from "../utils/validation"
 
 export const registerInputs: inputs[]= [
     {
@@ -8,8 +7,7 @@ export const registerInputs: inputs[]= [
         type: "text",
         value: "",
         labelText:"",
-        labelIcon:"../assets/letter.png",
-        event : registerValidation
+        labelIcon:"./assets/letter.png",
     },
     {
         name: "userName",
@@ -17,9 +15,7 @@ export const registerInputs: inputs[]= [
         type: "text",
         value: "",
         labelText:"",
-        labelIcon:"../assets/account.png",
-        event : registerValidation
-
+        labelIcon:"./assets/account.png",
     },
     {
         name: "psw",
@@ -27,9 +23,7 @@ export const registerInputs: inputs[]= [
         type: "password",
         value: "",
         labelText:"",
-        labelIcon:"../assets/shield.png",
-        event : registerValidation
-
+        labelIcon:"./assets/shield.png",
     },
     {
         name: "psw",
@@ -37,8 +31,7 @@ export const registerInputs: inputs[]= [
         type: "password",
         value: "",
         labelText:"",
-        labelIcon:"../assets/shield.png",
-        event : registerValidation
+        labelIcon:"./assets/shield.png",
     }
 ]
 

@@ -1,0 +1,15 @@
+.select{
+    width: 280px;
+    padding: 0.8rem;
+    font-size: .9rem;
+}
+
+.select selected{
+    border: 1rem solid red;
+}
+
+.options {
+    border: 1px solid #e5e5e5;
+    background-color: var(--backgroundColor);
+    margin: 10px;
+}

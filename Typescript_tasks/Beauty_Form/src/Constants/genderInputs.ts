@@ -1,6 +1,6 @@
-import { genderInput } from "../Interface/inteface";
+import { inputs } from "../Interface/inteface";
 
-export const genderInputs : genderInput[]= [
+export const genderInputs : inputs[]= [
     {
         name : "gender",
         type :"radio",

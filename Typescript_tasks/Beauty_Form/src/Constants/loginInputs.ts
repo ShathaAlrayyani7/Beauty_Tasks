@@ -1,5 +1,4 @@
 import { inputs} from "../Interface/inteface"
-import { loginValidation } from "../utils/validation"
 
 export const loginInputs:inputs[] = [
     {
@@ -8,8 +7,7 @@ export const loginInputs:inputs[] = [
         value:"",
         labelText :"",
         placeholder:"Email",
-        labelIcon : "../assets/letter.png",
-        event : loginValidation
+        labelIcon : "./assets/letter.png",
     },
     {
         name : "psw",
@@ -17,7 +15,6 @@ export const loginInputs:inputs[] = [
         type :"password",
         value:"",
         labelText:"",
-        labelIcon:"../assets/shield.png",
-        event : loginValidation
+        labelIcon:"./assets/shield.png",
     },
 ]

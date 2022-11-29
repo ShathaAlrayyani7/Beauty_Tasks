@@ -1,4 +1,10 @@
 .radio{
     display: flex;
+    gap: 1.5rem;
+}
+
+.radio-input{
+    box-shadow:  inset -6px -6px 6px white;
+    height: 15px;
     gap: 1rem;
 }

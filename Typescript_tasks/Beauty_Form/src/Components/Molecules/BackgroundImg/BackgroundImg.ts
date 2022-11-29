@@ -1,22 +1,25 @@
 
-export default class BackgroundImg{
+export default class BackgroundImg {
+
     private _altUrl = 'https://images.hdqwalls.com/wallpapers/hatake-kakashi-naruto-anime-q5.jpg'
     private _backgroundImg : HTMLDivElement
-    constructor(type:string , url:string = 'https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash.jpg'){
+    private _url = 'https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash.jpg'
+    
+    constructor(type:string) {
 
         this._backgroundImg = document.createElement('div')
         const background : HTMLImageElement = document.createElement('img')
         this._backgroundImg.setAttribute('class', `Background ${type}`)
 
-        background.setAttribute('class', `backgroundImg ${type}`)
-        background.setAttribute('src', url)
+        background.className =  `backgroundImg ${type}`
+        background.src =  this._url
+        background.alt = 'Background Image'
         background.addEventListener('onerror',this.handleImageError)
-        background.setAttribute('alt', 'Background Image')
 
         this._backgroundImg.appendChild(background)
     }
 
-    get backgroundImg(){
+    get backgroundImg() {
         return this._backgroundImg
     }
 

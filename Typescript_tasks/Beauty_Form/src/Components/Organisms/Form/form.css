@@ -2,9 +2,3 @@
 .text{
     color: var(--black);
 }
-
-
-.select{
-    width: 280px;
-    padding: 0.7rem;
-}

@@ -1,8 +1,10 @@
 import { Buttons } from "../../../Constants/Enums";
 
-export default class Button{
+export default class Button {
+    
     private _button : HTMLButtonElement
-    constructor(text:Buttons){
+
+    constructor(text:Buttons) {
         this._button = document.createElement('button');
         this._button.setAttribute('class','button');
         this._button.setAttribute('type', 'submit');

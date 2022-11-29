@@ -11,6 +11,7 @@
 @import url('./src/Components/Organisms/RegisterForm/registerForm.css');
 @import url('./src/Components/Templates/LoginFormContainer/loginFormContainer.css');
 @import url('./src/Components/Templates/RegisterFormContainer/registerFormContainer.css');
+@import url('./src/Components/Atoms/Select/select.css');
 @import url('./src/Components/Atoms/Label/label.css');
 @import url('./global.css');
 

@@ -7,19 +7,21 @@ export default class Storage <T extends string>{
         this._storage = getStorage()
     }
 
-    protected get(key: T): string | null {
-        return this._storage.getItem(key)
+    get(key: T): string[] | ""{
+        let data = this._storage.getItem(key)
+        return (data)? JSON.parse(data): ""
+    
     }
 
-    protected set(key: T, value: string): void {
-        this._storage.setItem(key, value)
+    set(key: T, value: string[]): void {
+        this._storage.setItem(key, JSON.stringify(value))
     }
 
-    protected clearItem(key: T): void {
+    clearItem(key: T): void {
         this._storage.removeItem(key)
     }
 
-    protected clear(keys: T[]): void {
+    clear(keys: T[]): void {
         keys.forEach((key) => this.clearItem(key))
     }
 }
