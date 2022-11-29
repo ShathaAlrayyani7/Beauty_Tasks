@@ -1,0 +1,6 @@
+.iconImg{
+    background-color: var(--iconBg);
+    border-radius: 5px;
+    padding: 0.4rem;
+    width: 50px;
+}
