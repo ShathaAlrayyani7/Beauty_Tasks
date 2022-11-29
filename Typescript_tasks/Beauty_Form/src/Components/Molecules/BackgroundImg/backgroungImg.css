@@ -1,4 +1,4 @@
-.backgroundImg{
+.backgroundImg {
     grid-area: img;
     height: 400px;
     width: 340px;
@@ -6,7 +6,7 @@
     border-radius: 0px 15px 15px 0px;
 }
 
-.backgroundImg.register{
+.backgroundImg.register {
     height: 0;
     width: 0;
 }

@@ -1,13 +1,9 @@
-.formItem{
+.formItem {
     display: flex;
     flex-wrap: wrap;
 }
 
-.item{
+.item {
     display: flex;
     gap: 0.2rem;
 }
-
-
-
-

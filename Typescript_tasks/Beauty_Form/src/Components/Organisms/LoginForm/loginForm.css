@@ -1,10 +1,10 @@
-.login-form{
+.login-form {
+    align-items: baseline;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    grid-area: form;
     gap: 1rem;
-    padding: 0px 3rem;
+    grid-area: form;
     height: 400px;
+    padding: 0px 3rem;
     width: 400px;
 }

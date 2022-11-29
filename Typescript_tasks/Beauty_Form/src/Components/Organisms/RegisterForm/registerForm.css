@@ -1,10 +1,10 @@
-.register-form{
+.register-form {
+    align-items: baseline;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    grid-area: form;
     gap: 1rem;
-    padding: 0px 3rem;
+    grid-area: form;
     height: 900px;
+    padding: 0px 3rem;
     width: 300px;
 }

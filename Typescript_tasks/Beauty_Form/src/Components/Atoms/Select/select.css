@@ -1,15 +1,15 @@
-.select{
-    width: 280px;
+.select {
+    font-size: 0.9rem;
     padding: 0.8rem;
-    font-size: .9rem;
+    width: 280px;
 }
 
-.select selected{
+.select selected {
     border: 1rem solid red;
 }
 
 .options {
     border: 1px solid #e5e5e5;
-    background-color: var(--backgroundColor);
+    background-color: var(--linkHover);
     margin: 10px;
 }

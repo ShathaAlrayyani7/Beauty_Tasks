@@ -1,14 +1,13 @@
-export interface genderInput{
-    type:string,
-    name:string,
-    value:string,
-    labelText:string
+export interface genderInput {
+    type: string;
+    name: string;
+    value: string;
+    labelText: string;
 }
 
-
 export interface inputs extends genderInput {
-    placeholder?:string
-    labelIcon?: string
+    placeholder?: string;
+    labelIcon?: string;
 }
 
 export interface IStorage {

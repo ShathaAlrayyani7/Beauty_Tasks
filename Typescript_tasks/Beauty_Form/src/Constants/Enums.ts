@@ -1,28 +1,28 @@
-export enum Buttons{
+export enum Buttons {
     login = "Login",
-    register = "Register"
+    register = "Register",
 }
 
-export enum FormTitles{
+export enum FormTitles {
     loginType = "login",
     loginForm = "Login",
     registerType = "Register",
-    registerForm = "Register"
+    registerForm = "Register",
 }
 
-export enum GenderInput{
+export enum GenderInput {
     name = "gender",
     type = "radio",
     male = "Male",
-    female = "Female"
+    female = "Female",
 }
 
-export enum GenderLabel{
+export enum GenderLabel {
     maleText = "Male",
-    femaleText = "Female"
+    femaleText = "Female",
 }
 
-export enum SwitchLinks{
+export enum SwitchLinks {
     login = "Don't have an account? ",
-    register = "Have an account already? "
+    register = "Have an account already? ",
 }

@@ -12,7 +12,6 @@ export const validEmail = (mail)=>{
         validMsg.innerText = text
         return false
     }
-
 }
 
 export const validUserName = (psw)=>{
@@ -31,31 +30,32 @@ export const validUserName = (psw)=>{
 }
 
 export const validPsw1 = (psw)=>{
-    let regx = /^[a-zA-Z0-9!@#$%^&*]{8,16}$/;
-    let numbers = /[0-9]/g
-    let uppercase = /[A-Z]/g
+    const regx = /^[a-zA-Z0-9!@#$%^&*]{8,16}$/
+    const numbers = /[0-9]/
+    const uppercase = /[A-Z]/
+    const length = /^.{8,16}$/
     let text = ''
-    let validMsg = document.getElementsByClassName('valid psw1')[0];
+    const validMsg = document.getElementsByClassName('valid psw')[0]
 
-    let text1 = ` -Your password must be more than 8 characters and less than 16 \n`
-    let text2  =  `-Your password must contain at least one digit \n`
-    let text3  = `-Your password must contain at least one uppercase letter.\n`
-    if (regx.test(psw)){
-        validMsg.innerText = text
+    const text1 = ` -Your password must be more than 8 characters and less than 16 \n`
+    const text2  =  `-Your password must contain at least one digit \n`
+    const text3  = `-Your password must contain at least one uppercase letter.\n`
+    if(!regx.test(psw)){
+             
+        if(!length.test(psw)){
+            text += text1
+        }
+        if(!numbers.test(psw)){
+            text += text2
+        }
+        if(!uppercase.test(psw)){
+            text += text3
+        }
+        validMsg.innerText=text
+        
+    }else{
+        validMsg.innerText=text
         return true
-    }
-    else{
-        if(psw.length < 8 || psw.length > 16){
-            text += text1;
-        }
-        if(!psw.match(numbers)){
-            text += text2;
-        }
-        if(!psw.match(uppercase)){
-            text += text3;
-        }
-        validMsg.innerText = text
-        return false
     }
 }
 
@@ -73,7 +73,6 @@ export const validPsw2 = (psw1,psw2)=>{
         validMsg.innerText = text
         return false
     }
-
 }
 
 export const validSignIn =(email,psw)=>{
@@ -101,6 +100,4 @@ export const validSignIn =(email,psw)=>{
         return false
 
     }
-
-
 }
