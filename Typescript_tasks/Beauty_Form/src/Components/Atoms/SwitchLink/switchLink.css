@@ -1,9 +1,9 @@
 .link {
-    color: var(--linkColor);
+    color: var(--cerise);
     text-decoration: underline;
 }
 
 .link:hover {
-    color: var(--linkHover);
+    color: var(--plum);
     cursor: pointer;
 }

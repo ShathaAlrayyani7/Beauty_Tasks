@@ -1,6 +1,7 @@
 .iconImg {
-    background-color: var(--iconBg);
+    background: linear-gradient(to bottom, var(--plum), var(--pink));
     border-radius: 5px;
+    box-shadow: 0px 0.5px 1.5px var(--gray);
     padding: 0.4rem;
     width: 50px;
 }

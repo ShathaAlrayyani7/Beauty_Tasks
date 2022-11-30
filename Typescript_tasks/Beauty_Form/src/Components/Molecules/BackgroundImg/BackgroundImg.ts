@@ -3,7 +3,7 @@ export default class BackgroundImg {
         "https://images.hdqwalls.com/wallpapers/hatake-kakashi-naruto-anime-q5.jpg";
     private _backgroundImg: HTMLDivElement;
     private _url =
-        "https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash.jpg";
+        "https://chasingdaisiesblog.com/wp-content/uploads/2020/09/3a06c0028fc03a6cf8b209d50a84f0dc.jpg";
 
     constructor(type: string) {
         this._backgroundImg = document.createElement("div");

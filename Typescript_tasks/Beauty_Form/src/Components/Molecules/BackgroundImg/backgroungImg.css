@@ -1,9 +1,9 @@
 .backgroundImg {
+    border-radius: 0px 15px 15px 0px;
     grid-area: img;
     height: 400px;
-    width: 340px;
     place-self: center;
-    border-radius: 0px 15px 15px 0px;
+    width: 350px;
 }
 
 .backgroundImg.register {

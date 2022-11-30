@@ -3,18 +3,17 @@
     width: 200px;
 }
 .button {
-    background-color: var(--buttonBg);
+    background: linear-gradient(to bottom, var(--plum), var(--pink));
     border-radius: 5px;
     border: none;
-    box-shadow: 0px 0.5px 1.5px var(--buttonColor);
-    color: var(--buttonColor);
+    box-shadow: 0px 0.5px 1.5px var(--bunker);
+    color: var(--bunker);
     font-family: var(--font);
     font-size: 1rem;
+    font-weight: 700;
     padding: 6px 14px;
-    transition: 0.5s;
 }
 
 .button:hover {
-    background-color: var(--hover);
-    transition: 0.5s;
+    background: var(--pink);
 }

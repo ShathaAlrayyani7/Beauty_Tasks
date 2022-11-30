@@ -4,7 +4,7 @@
     flex-direction: column;
     gap: 1rem;
     grid-area: form;
-    height: 400px;
+    height: 350px;
     padding: 0px 3rem;
     width: 400px;
 }
