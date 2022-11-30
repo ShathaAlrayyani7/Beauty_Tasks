@@ -1,57 +1,56 @@
-@import url('./src/Components/Atoms/Button/button.css');
-@import url('./src/Components/Molecules/FormItem/formItem.css');
-@import url('./src/Components/Atoms/Button/button.css');
-@import url('./src/Components/Atoms/Input/input.css');
-@import url('./src/Components/Molecules/Radio/radio.css');
-@import url('./src/Components/Atoms/FormTitle/formTitle.css');
-@import url('./src/Components/Atoms/SwitchLink/switchLink.css');
-@import url('./src/Components/Molecules/BackgroundImg/backgroungImg.css');
-@import url('./src/Components/Atoms/ValidationText/validationText.css');
-@import url('./src/Components/Organisms/LoginForm/loginForm.css');
-@import url('./src/Components/Organisms/RegisterForm/registerForm.css');
-@import url('./src/Components/Templates/LoginFormContainer/loginFormContainer.css');
-@import url('./src/Components/Templates/RegisterFormContainer/registerFormContainer.css');
-@import url('./src/Components/Atoms/Select/select.css');
-@import url('./src/Components/Atoms/Label/label.css');
-@import url('./global.css');
+@import url("./src/Components/Atoms/Button/button.css");
+@import url("./src/Components/Molecules/FormItem/formItem.css");
+@import url("./src/Components/Atoms/Button/button.css");
+@import url("./src/Components/Atoms/Input/input.css");
+@import url("./src/Components/Molecules/Radio/radio.css");
+@import url("./src/Components/Atoms/FormTitle/formTitle.css");
+@import url("./src/Components/Atoms/SwitchLink/switchLink.css");
+@import url("./src/Components/Molecules/BackgroundImg/backgroungImg.css");
+@import url("./src/Components/Atoms/ValidationText/validationText.css");
+@import url("./src/Components/Organisms/LoginForm/loginForm.css");
+@import url("./src/Components/Organisms/RegisterForm/registerForm.css");
+@import url("./src/Components/Templates/LoginFormContainer/loginFormContainer.css");
+@import url("./src/Components/Templates/RegisterFormContainer/registerFormContainer.css");
+@import url("./src/Components/Atoms/Select/select.css");
+@import url("./src/Components/Atoms/Label/label.css");
+@import url("./global.css");
 
-*{
+* {
     box-sizing: border-box;
     font-family: var(--font);
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     height: 100vh;
     width: 100%;
 }
 
-.app{
+.app {
     align-items: center;
     background: linear-gradient(to bottom, var(--plum), var(--palegreen));
     display: flex;
-    height: 100vh;
+    height: inherit;
     justify-content: center;
     overflow-y: hidden;
     width: 100%;
 }
 
-@media screen and (max-width: 600px){
-  
-    .backgroundImg{
+@media screen and (max-width: 600px) {
+    .backgroundImg {
         height: 255px;
         width: 350px;
     }
 
-    .formContainer-login{
-        grid-template: [row1-start]'form' 55%[row1-end] [row2-start]'img' 45%[row2-end]  / 350px;
+    .formContainer-login {
+        grid-template: [row1-start] "form" 55%[row1-end] [row2-start] "img" 45%[row2-end] / 350px;
         height: 600px;
         width: 350px;
     }
 
-    .formContainer-register{
+    .formContainer-register {
         height: 800px;
         width: 400px;
-    } 
+    }
 }

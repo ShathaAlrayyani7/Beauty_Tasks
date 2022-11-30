@@ -4,7 +4,7 @@ export default class RegisterFormContainer {
     private _formContainer: HTMLDivElement;
     constructor() {
         this._formContainer = document.createElement("div");
-        let form = new RegisterForm().registerForm;
+        let form = new RegisterForm().form;
         this._formContainer.appendChild(form);
         this._formContainer.setAttribute("class", `formContainer-register`);
     }

@@ -18,12 +18,9 @@ export default class RegisterForm extends Form {
             registerValidation,
             genderInputs
         );
-        this._button.addEventListener("click", (e) => register(e));
+        this._button.addEventListener("click", register);
         this._form.setAttribute("class", "register-form");
         this._link.addEventListener("click", loginForm);
     }
 
-    get registerForm() {
-        return this._form;
-    }
 }

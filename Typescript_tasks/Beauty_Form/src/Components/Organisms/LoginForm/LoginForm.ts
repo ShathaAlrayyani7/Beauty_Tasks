@@ -17,11 +17,8 @@ export default class LoginForm extends Form {
             loginValidation
         );
         this._form.setAttribute("class", "login-form");
-        this._button.addEventListener("click", (e) => submit(e));
+        this._button.addEventListener("click",submit);
         this._link.addEventListener("click", registerForm);
     }
 
-    get loginForm() {
-        return this._form;
-    }
 }

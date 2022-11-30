@@ -6,7 +6,7 @@ export default class LoginFormContainer {
     constructor() {
         this._formContainer = document.createElement("div");
 
-        const form = new LoginForm().loginForm;
+        const form = new LoginForm().form;
         this._formContainer.appendChild(form);
         const backgroundImg = new BackgroundImg("login").backgroundImg;
         this._formContainer.setAttribute("class", `formContainer-login`);

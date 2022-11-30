@@ -7,14 +7,10 @@ export const register = <html extends HTMLInputElement>(e: MouseEvent) => {
     const user = document.getElementsByName(`userName`)[0] as html;
     const psw1 = document.getElementsByName(`psw`)[0] as html;
     const psw2 = document.getElementsByName(`psw`)[1] as html;
-    if (
-        validEmail(email.value) &&
-        validUserName(user.value) &&
-        validPsw1(psw1.value) &&
-        validPsw2(psw1.value, psw2.value)
-    ) {
+    if (validEmail(email.value) && validUserName(user.value) && validPsw1(psw1.value) &&validPsw2(psw1.value, psw2.value)) {
         let storage = new Storage();
-        if (storage.get(email.value)) {
+        let userData = storage.get(email.value);
+        if (userData =='') {
             storage.set(email.value, [psw1.value, user.value]);
         } else {
             alert(
