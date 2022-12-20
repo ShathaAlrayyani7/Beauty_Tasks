@@ -1,0 +1,12 @@
+.formTemplate-register {
+    background-color: rgb(255, 240, 245);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(128, 128, 128);
+    display: grid;
+    gap: 1rem;
+    grid-template: [row1-start] "form img" 100%[row1-end]/ 350px 300px;
+    height: 750px;
+    padding: 1rem;
+    width: 400px;
+}
+

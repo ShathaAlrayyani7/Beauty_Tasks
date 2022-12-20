@@ -1,0 +1,15 @@
+.link {
+    color: rgb(224, 46, 135);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: rgb(221, 160, 221);
+    cursor: pointer;
+}
+
+.text {
+    width: 550px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

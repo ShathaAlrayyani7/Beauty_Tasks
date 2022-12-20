@@ -1,0 +1,8 @@
+@import url('./global.module.css');
+@import url('./Components/Atoms/Button/button.module.css');
+@import url('./Components/Atoms/Input/input.module.css');
+@import url('./Components/Atoms/Label/label.module.css');
+@import url('./Components/Atoms/Radio/radio.module.css');
+@import url('./Components/Atoms/Select/select.module.css');
+@import url('./Components/Atoms/SwitchLink/switchLink.module.css');
+@import url('./Components/Atoms/ValidationText/validationText.module.css');

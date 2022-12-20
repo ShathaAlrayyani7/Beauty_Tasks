@@ -1,0 +1,14 @@
+.registerPage {
+    align-items: center;
+    background: linear-gradient(
+        to bottom,
+        rgb(221, 160, 221),
+        rgb(152, 251, 152)
+    );
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+}

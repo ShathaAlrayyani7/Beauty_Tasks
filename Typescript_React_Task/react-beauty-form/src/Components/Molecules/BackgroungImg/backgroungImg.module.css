@@ -1,0 +1,21 @@
+.backgroundImg{
+    grid-area: img;
+    height: 270px;
+    place-self: center;
+    width: 360px;
+    display: flex;
+}
+
+.img{
+    border-radius: 0px 15px 15px 0px;
+    height: inherit;
+    width: inherit;
+}
+
+@media screen and (min-width: 600px){
+    
+    .backgroundImg{
+        height: 400px;
+        width: 365px;
+    }
+}

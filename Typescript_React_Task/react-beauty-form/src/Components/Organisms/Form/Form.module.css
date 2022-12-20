@@ -1,0 +1,21 @@
+.login-form {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    grid-area: form;
+    height: 400px;
+    padding: 10px 3rem;
+    width: 400px;
+}
+
+.register-form {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    grid-area: form;
+    height: 900px;
+    padding: 0px 3rem;
+    width: 300px;
+}

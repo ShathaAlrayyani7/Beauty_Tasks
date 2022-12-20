@@ -1,0 +1,21 @@
+.input {
+    background: #ecf0f3;
+    border-radius: 10px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    height: 50px;
+    padding-left: 15px;
+}
+
+input:focus {
+    border: 5px solid rgb(221, 160, 221);
+    font-size: 14px;
+}
+
+.input-gender {
+    height: 15px;
+    margin-right: 0.5rem;
+    box-shadow: inset -6px -6px 6px white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
